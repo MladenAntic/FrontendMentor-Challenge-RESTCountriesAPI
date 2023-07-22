@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+@import "./reset";
+@import "./utilities";
+@import './variables';
+
+@import "./header";
+@import "./mainContent";
+@import "./mainDetail";
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background: $light-mode-bg;
+
+  &.dark-theme {
+    background: $dark-mode-bg;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $light-mode-input;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $light-mode-text;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

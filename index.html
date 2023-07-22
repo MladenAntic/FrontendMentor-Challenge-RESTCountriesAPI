@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Countries API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="wrapper">
+        <h2>Where in the world?</h2>
+
+        <div class="header__themeToggler" id="themeToggler">
+          <i class="fa-solid fa-moon"></i>
+          <span>Dark Mode</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="wrapper">
+        <div class="main__inputWrapper">
+          <div class="main__input">
+            <input
+              type="text"
+              id="text"
+              placeholder="Search for a country..."
+            />
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <div class="main__filters">
+            <div class="main__sortBy">
+              <div class="main__sortByFilter filters">
+                <span>Sort By</span>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+
+              <ul>
+                <li class="main__AZ">A - Z</li>
+                <li class="main__ZA">Z - A</li>
+                <li class="main__populationAscending">Population ascending</li>
+                <li class="main__populationDescending">
+                  Population descending
+                </li>
+              </ul>
+            </div>
+            <div class="main__select">
+              <div class="main__selectFilter filters">
+                <span>Filter by Region</span>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+
+              <ul>
+                <li class="main__africa">Africa</li>
+                <li class="main__america">America</li>
+                <li class="main__asia">Asia</li>
+                <li class="main__europe">Europe</li>
+                <li class="main__oceania">Oceania</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__content"></div>
+      </div>
+    </main>
+
+    <section id="mainDetail" class="mainDetail">
+      <div class="wrapper">
+        <a href="index.html" class="mainDetail__goBackBtn" id="goBack">
+          <i class="fa-solid fa-arrow-left-long"></i>
+          Back
+        </a>
+
+        <div class="mainDetail__countryInfo"></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
